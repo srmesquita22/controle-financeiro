@@ -1,2 +1,2 @@
 # controle-financas
-Sistema de Controle de Finanças em Laravel
+Sistema para Controle de Financeiro em Laravel.
