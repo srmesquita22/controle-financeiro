@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Controle Financeiro
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+⚠️ Aviso: Trabalho em progresso!
 
-## About Laravel
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?longCache=true&style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green.svg?longCache=true&style=flat-square)
+![StyleCI](https://github.styleci.io/repos/249856074/shield?branch=master)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![MapOS](https://raw.githubusercontent.com/srmesquita22/controle-financeiro/master/assets/img/logo.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Requerimentos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* PHP 8 ou superior
+* Banco de dados (por exemplo: MySQL, PostgreSQL, SQLite)
+* Servidor Web (por exemplo: Apache, Nginx, IIS)
 
-## Learning Laravel
+## Framework
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Controle Financeiro usa o [Laravel](http://laravel.com), o melhor framework PHP atualmente, como base.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Instalação
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Instale o [Composer](https://getcomposer.org/download) e o [Npm](https://nodejs.org/en/download)
+* Clone o repositório: `git clone https://github.com/srmesquita22/controle-financeiro.git`
+* Depois acesse a pasta controle-financeiro, `cd controle-financeiro`
+* Instale as dependências `composer install ; npm install ; npm run production`
+* Crie o arquivo de configuração de variáveis de ambiente `cp .env.production .env`
+* Configure as variáveis de ambiente e a conexão com o banco de dados no arquivo .env
+* Rode os seeders `php artisan migrate:fresh --seed`
+* Rode `php artisan key:generate`
+* Rode `php artisan serve` para iniciar o servidor.
+* Acesse o Controle Financeiro no navegador: http://localhost:8000 ou url que você configurar.
+* E logue com as credenciais que você cadastrar.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Dependências de front-end
 
-### Premium Partners
+Ao atualizar dependências de front-end ou alterar arquivos CSS ou JS você precisará seguir as instruções abaixo.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1. Garanta que tenha o Node e NPM instalado.
 
-## Contributing
+```
+npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. Execute o comando abaixo para compilar o CSS e JS:
 
-## Code of Conduct
+```
+npm run prod
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Este comando irá gerar os arquivos dentro da pasta `public` com os arquivos CSS, e JavaScript minificados.
 
-## Security Vulnerabilities
+## Contribuindo
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Por favor, seja muito claro em suas pull requests, as pull requests podem ser rejeitadas sem motivo.
 
-## License
+Ao contribuir com código para o Controle Financeiro, você deve seguir os padrões de codificação PSR-2. A regra de ouro é: Imite o código Contrle Financeiro existente.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Changelog
+
+Por favor, consulte [Changelog](CHANGELOG.md) para obter mais informações sobre todas as atualizações.
+
+## Segurança
+
+Se você descobrir algum problema relacionado à segurança, envie um email para contato@renatomesquita.dev ao invés de usar o issue tracker.
+
+## Créditos
+
+* [Renato Mesquita](https://github.com/srmesquita22)
+* [Sabrina Mesquita](https://github.com/sabrinagui)
+* [Todos os Contribuidores](../../contributors)
+
+## Licença
+
+O Controle Financeiro é distribuído utilizando a [MIT License](LICENSE.md).
