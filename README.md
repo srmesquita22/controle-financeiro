@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg?longCache=true&style=flat-square)
 ![StyleCI](https://github.styleci.io/repos/249856074/shield?branch=master)
 
-![MapOS](https://raw.githubusercontent.com/srmesquita22/controle-financeiro/master/assets/img/logo.png)
+![Controle Financeiro](https://raw.githubusercontent.com/srmesquita22/controle-financeiro/master/assets/logo.png)
 
 ## Requerimentos
 
